@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.main_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(37, 91, 95);
+}
+
+.calc_body {
+  display: flex;
+  width: 500px;
+  height: 650px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(54, 139, 160);
+  border-radius: 10px;
+}
+
+.calc_display {
+  width: 95%;
+  height: 17%;
+  background-color: rgb(144, 206, 170);
+  border-radius: 10px;
+  font-size: 25px;
+  color: darkolivegreen;
+}
+
+.calc_buttons {
+  display: grid;
+  width: 95%;
+  height: 78%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 5px;
+}
+
+button {
+  background-color: rgb(24, 24, 23);
+  border-radius: 20px;
+  color: antiquewhite;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#ac,
+#del {
+  grid-column: span 2;
+}
+
+#ac:hover,
+#del:hover {
+  background-color: rgb(224, 84, 84);
+}
+
+.last_operation,
+.result {
+  width: 100%;
+  height: 50%;
+  text-align: right;
+  padding-top: 10px;
+  padding-right: 10px;
+  color: rgb(0, 0, 0);
+}
+
+[data-key]:hover {
+  background-color: rgb(198, 224, 84);
+  color: rgb(0, 0, 0);
+}
+
+[data-operator]:hover {
+  background-color: rgb(84, 110, 224);
+  color: rgb(255, 255, 255);
+}
+
+#dot:hover {
+  background-color: rgb(84, 110, 224);
+  color: rgb(255, 255, 255);
+}
+
+#equal:hover {
+  background-color: rgb(8, 151, 3);
+  color: rgb(0, 0, 0);
+}
